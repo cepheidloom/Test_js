@@ -1,0 +1,92 @@
+/* Reset default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Body styles */
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+  }
+  
+  /* Form container styles */
+  form {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Form title styles */
+  h1 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  /* Form label styles */
+  label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+  }
+  
+  /* Form input styles */
+  input[type="text"],
+  input[type="tel"],
+  input[type="date"],
+  textarea {
+    width: 100%; /* Set width to 100% */
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 10px;
+  }
+  
+  /* Form submit button styles */
+  input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    background-color: #4caf50;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  /* Form submit button hover effect */
+  input[type="submit"]:hover {
+    background-color: #45a049;
+  }
+  
+  /* Additional styles for new elements */
+  #findDetails {
+    text-align: center;
+  }
+  
+  #findName {
+    text-align: center;
+    width: 100%;
+    padding: 10px;
+    background-color: #bac6bb;
+    color: #226d8d;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  #find {
+    margin: 0 auto;
+  }
+  
+  #findLocation {
+    text-align: center;
+  }
+  
+  #findDate {
+    text-align: center;
+  }
+  
