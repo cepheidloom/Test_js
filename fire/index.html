@@ -5,43 +5,51 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="index.css">
-  <script src="index.js"></script>
   <title>Lost Pet Information Form</title>
 </head>
 
 <body>
-  <h1>Lost Pet Information Form</h1>
-  <form>
-    <label for="founderName">Fofunder Name:</label>
-    <input type="text" id="founderName" name="founderName" required>
+  <div id="enterPetDetails" >
+    <h1>Enter Pet Details</h1>
+    <h4>Name</h4>
+    <input id="founderName" type="text"> <br><br>
+    <h4>Phone</h4>
+    <input id="founderPhone" type="text"> <br><br>
+    <h4>Location</h4>
+    <input id="foundLocation" type="text"> <br><br>
+    <h4>Date</h4>
+    <input id="foundDate" type="text"> <br><br>
+    <h4>Description</h4>
+    <input id="petDescription" type="text"> <br><br>
+  
+    <button id="submit">Submit</button>
+  </div>
 
-    <label for="founderPhone">Founder Phone:</label>
-    <input type="tel" id="founderPhone" name="founderPhone" required>
-
-    <label for="petName">Pet Name:</label>
-    <input type="text" id="petName" name="petName" required>
-
-    <label for="foundLocation">Found Location:</label>
-    <input type="text" id="foundLocation" name="foundLocation" required>
-
-    <label for="foundDate">Found Date:</label>
-    <input type="date" id="foundDate" name="foundDate" required>
-
-    <label for="petDescription">Pet Description:</label>
-    <textarea id="petDescription" name="petDescription" required></textarea>
-
-    <input type="submit" value="Submit">
-  </form>
   <div id= "findDetails">
     <h1> Find by Pet Name</h1>
     <h4>Name</h4>
     <input id="findName" type="text"> <br><br>
-    <button id="find">Find</button>
-
+    <button id="findBtn">Find</button>
+    <h3 id="findPhone"></h3>
     <h3 id="findLocation"></h3>
     <h3 id="findDate"></h3> <br><br>
+    <h3 id="findDescription"></h3>
 
   </div>
+  <script>
+    var submitBtn = document.querySelector("#submit");
+
+    submitBtn.addEventListener("click", function() {
+      var founderName = document.querySelector("#founderName").value;
+      var founderPhone = document.querySelector("#founderPhone").value;
+      var foundLocation = document.querySelector("#foundLocation").value;
+      var foundDate = document.querySelector("#foundDate").value;
+      var petDescription = document.querySelector("#petDescription").value;
+
+      saveData(founderName, founderPhone, foundLocation, foundDate, petDescription);
+    });
+  </script>
+  <script src="main.js"></script>
 </body>
 
 </html>

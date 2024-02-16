@@ -50,8 +50,8 @@
   input[type="submit"] {
     width: 100%;
     padding: 10px;
-    background-color: #4caf50;
-    color: #fff;
+    background-color: #bac6bb; /* Change background color */
+    color: #226d8d; /* Change text color */
     border: none;
     border-radius: 4px;
     cursor: pointer;
@@ -63,12 +63,44 @@
   }
   
   /* Additional styles for new elements */
+  #enterPetDetails {
+    text-align: center;
+  }
+  
+  #name {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 10px;
+  }
+  
+  #location {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 10px;
+  }
+  
+  #date {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 10px;
+  }
+  
+  #submit {
+
+  }
+
+  
   #findDetails {
     text-align: center;
   }
   
   #findName {
-    text-align: center;
     width: 100%;
     padding: 10px;
     background-color: #bac6bb;
@@ -89,4 +121,3 @@
   #findDate {
     text-align: center;
   }
-  
