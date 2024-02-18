@@ -21,7 +21,6 @@
     <input id="foundDate" type="text"> <br><br>
     <h4>Description</h4>
     <input id="petDescription" type="text"> <br><br>
-  
     <button id="submit">Submit</button>
   </div>
 
@@ -34,21 +33,7 @@
     <h3 id="findLocation"></h3>
     <h3 id="findDate"></h3> <br><br>
     <h3 id="findDescription"></h3>
-
   </div>
-  <script>
-    var submitBtn = document.querySelector("#submit");
-
-    submitBtn.addEventListener("click", function() {
-      var founderName = document.querySelector("#founderName").value;
-      var founderPhone = document.querySelector("#founderPhone").value;
-      var foundLocation = document.querySelector("#foundLocation").value;
-      var foundDate = document.querySelector("#foundDate").value;
-      var petDescription = document.querySelector("#petDescription").value;
-
-      saveData(founderName, founderPhone, foundLocation, foundDate, petDescription);
-    });
-  </script>
   <script src="main.js"></script>
 </body>
 

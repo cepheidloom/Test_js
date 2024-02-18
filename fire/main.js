@@ -17,7 +17,19 @@ firebase.initializeApp(firebaseConfig);
 
 const db = firebase.database();
 
-function saveData(founderName, founderPhone, foundLocation, foundDate, petDescription) {
+/*var submitBtn = document.querySelector("#submit");
+
+    submitBtn.addEventListener("click", function() {
+      var founderName = document.querySelector("#founderName").value;
+      var founderPhone = document.querySelector("#founderPhone").value;
+      var foundLocation = document.querySelector("#foundLocation").value;
+      var foundDate = document.querySelector("#foundDate").value;
+      var petDescription = document.querySelector("#petDescription").value;
+
+      saveData(founderName, founderPhone, foundLocation, foundDate, petDescription);
+    });*/
+    
+/*function saveData(founderName, founderPhone, foundLocation, foundDate, petDescription) {
   firebase.database().ref('found/' + founderName).set({
     founderName: founderName,
     founderPhone: founderPhone,
@@ -28,4 +40,4 @@ function saveData(founderName, founderPhone, foundLocation, foundDate, petDescri
   .then(() => {alert("Data saved successfully")} )
   .catch((error) => {alert("Data could not be saved." + error)});
 }
-module.exports = saveData;
+module.exports = saveData;/*
